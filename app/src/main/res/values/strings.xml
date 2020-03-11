@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">TennisOnline</string>
     <string name="HelloWords">Please log in or sing up</string>
-    <string name="EnterLogin">Enter your phone number</string>
+    <string name="EnterLogin">Enter your nickname</string>
     <string name="EnterPass">Enter password</string>
     <string name="GoPlay">Go play</string>
-    <string name="SingUp">Sing up</string>
+    <string name="SingUp">Sign up</string>
+    <string name="EnterMail">Enter email</string>
+    <string name="Join">Join</string>
+    <string name="orLogIn">or log in</string>
 
 </resources>
