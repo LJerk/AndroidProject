@@ -11,5 +11,6 @@
     <string name="NickName">Nickname</string>
     <string name="StartGame">Start Game</string>
     <string name="Score">Score</string>
+    <string name="Exit">X</string>
 
 </resources>
