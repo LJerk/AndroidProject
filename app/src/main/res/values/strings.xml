@@ -8,5 +8,8 @@
     <string name="EnterMail">Enter email</string>
     <string name="Join">Join</string>
     <string name="orLogIn">or log in</string>
+    <string name="NickName">Nickname</string>
+    <string name="StartGame">Start Game</string>
+    <string name="Score">Score</string>
 
 </resources>
