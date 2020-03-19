@@ -10,7 +10,7 @@ class RegistrationPresenter : MvpPresenter<IRegistrationView>() {
     //    @Inject
     var userRepository: UserRepository = UserRepository()
 
-    fun registration(login: String, pass: String) {
+    fun registration(login: String, pass: String, mail: String) {
 
         // показать диалог блокировки
 
@@ -23,6 +23,6 @@ class RegistrationPresenter : MvpPresenter<IRegistrationView>() {
             // иначе показываем сообщение об ошибки
             viewState.showError(it)
 
-        }, login, pass)
+        }, login, pass, mail)
     }
 }

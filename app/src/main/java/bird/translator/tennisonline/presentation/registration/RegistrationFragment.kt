@@ -15,8 +15,6 @@ class RegistrationFragment : MvpAppCompatFragment(), IRegistrationView {
     @InjectPresenter
     lateinit var presenter: RegistrationPresenter
 
-//    @ProvidePresenter // Реализация для Dagger
-//    fun providePresenter() = RegistrationPresenter()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -30,11 +28,12 @@ class RegistrationFragment : MvpAppCompatFragment(), IRegistrationView {
         super.onViewCreated(view, savedInstanceState)
 
         btnLogin.setOnClickListener {
-            presenter.registration("${etLogin.text}", "${etPassword.text}")
+            presenter.registration("${etLogin.text}", "${etPassword.text}","${etMail.text}")
         }
     }
 
     override fun showError(message: String) {
         Toast.makeText(context, message, Toast.LENGTH_LONG).show()
     }
+
 }
