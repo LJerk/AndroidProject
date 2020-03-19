@@ -9,6 +9,7 @@ import bird.translator.tennisonline.R
 import com.arellomobile.mvp.MvpAppCompatFragment
 import com.arellomobile.mvp.presenter.InjectPresenter
 import kotlinx.android.synthetic.main.fragment_registration.*
+import bird.translator.tennisonline.presentation.authorization.AuthorizationFragment
 
 class RegistrationFragment : MvpAppCompatFragment(), IRegistrationView {
 
@@ -30,6 +31,7 @@ class RegistrationFragment : MvpAppCompatFragment(), IRegistrationView {
         btnLogin.setOnClickListener {
             presenter.registration("${etLogin.text}", "${etPassword.text}","${etMail.text}")
         }
+
     }
 
     override fun showError(message: String) {
