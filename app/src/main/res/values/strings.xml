@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TennisOnline</string>
+    <string name="app_name">Tennis Online</string>
     <string name="HelloWords">Please log in or sing up</string>
     <string name="EnterLogin">Enter your nickname</string>
     <string name="EnterPass">Enter password</string>
@@ -12,5 +12,6 @@
     <string name="StartGame">Start Game</string>
     <string name="Score">Score</string>
     <string name="Exit">X</string>
+    <string name="error_login_passwd_undefined">error_login_passwd_undefined</string>
 
 </resources>
