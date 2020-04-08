@@ -17,4 +17,5 @@ interface AppComponent {
     fun inject(target: RegistrationFragment)
     fun inject(target: AuthFragment)
     fun inject(target: LoadingFragment)
+    fun inject(target: DialogsFragment)
 }

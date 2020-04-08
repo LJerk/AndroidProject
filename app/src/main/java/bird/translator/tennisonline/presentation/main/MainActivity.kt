@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import bird.translator.tennisonline.App
 import bird.translator.tennisonline.R
+import bird.translator.tennisonline.base.ABaseActivity
 import bird.translator.tennisonline.presentation.credentials.CredentialsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+
+class MainActivity : ABaseActivity() {
 
     companion object {
 
@@ -23,13 +25,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_container)
 
         if (savedInstanceState != null)
             return // Не будем пересоздавать фрагмент, пусть берется старый из стека
 
-        btnLogout.setOnClickListener {
-            CredentialsActivity.show()
-        }
+        replace(DialogsFragment())
     }
 }

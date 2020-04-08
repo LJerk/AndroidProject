@@ -7,6 +7,7 @@ import bird.translator.tennisonline.base.ABaseFragment
 import bird.translator.tennisonline.domain.di.components.DaggerAppComponent
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.arellomobile.mvp.presenter.ProvidePresenter
+import kotlinx.android.synthetic.main.fragment_auth.*
 import kotlinx.android.synthetic.main.fragment_registration.*
 import javax.inject.Inject
 

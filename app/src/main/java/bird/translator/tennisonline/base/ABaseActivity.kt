@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import bird.translator.tennisonline.R
 
 abstract class ABaseActivity: AppCompatActivity() {
+
+    open fun getContainer(): Int = R.id.container
+
     fun replace(fragment: Fragment, backstack: String? = null, tag: String? = null){
+
         supportFragmentManager.beginTransaction()
             .replace(R.id.container, fragment, tag).apply{
                 backstack?.let{addToBackStack(it)}

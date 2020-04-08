@@ -1,7 +1,7 @@
 package bird.translator.tennisonline.domain.repositories.rest.service
 
-import bird.translator.tennisonline.domain.di.models.Token
-import bird.translator.tennisonline.domain.di.models.User
+import bird.translator.tennisonline.domain.repositories.models.rest.Token
+import bird.translator.tennisonline.domain.repositories.models.rest.User
 import io.reactivex.Observable
 import retrofit2.Call
 import retrofit2.http.Body

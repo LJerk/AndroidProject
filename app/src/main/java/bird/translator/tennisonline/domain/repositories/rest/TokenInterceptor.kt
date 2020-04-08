@@ -1,7 +1,7 @@
 package bird.translator.tennisonline.domain.repositories.rest
 
 import android.util.Log
-import bird.translator.tennisonline.domain.di.models.Token
+import bird.translator.tennisonline.domain.repositories.models.rest.Token
 import bird.translator.tennisonline.domain.repositories.UserRepository
 import bird.translator.tennisonline.exceptions.AuthException
 import bird.translator.tennisonline.presentation.credentials.CredentialsActivity
@@ -24,7 +24,6 @@ class TokenInterceptor : Interceptor {
     private val lock = ReentrantLock()
 
 
-    @Inject
     constructor(userRepository: UserRepository) {
         this.userRepository = userRepository
     }

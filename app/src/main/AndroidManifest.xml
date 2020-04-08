@@ -5,7 +5,7 @@
     package="bird.translator.tennisonline">
 
     <dist:module dist:instant="true" />
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"

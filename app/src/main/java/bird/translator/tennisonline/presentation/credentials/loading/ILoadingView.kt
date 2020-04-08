@@ -4,5 +4,5 @@ import com.arellomobile.mvp.MvpView
 
 interface ILoadingView : MvpView {
 
-    fun onLoadingComplete()
+    fun showAuth()
 }

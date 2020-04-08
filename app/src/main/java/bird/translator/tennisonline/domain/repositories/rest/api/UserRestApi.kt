@@ -2,7 +2,7 @@ package bird.translator.tennisonline.domain.repositories.rest.api
 
 import bird.translator.tennisonline.base.ABaseRestApi
 import bird.translator.tennisonline.base.IRestClient
-import bird.translator.tennisonline.domain.di.models.User
+import bird.translator.tennisonline.domain.repositories.models.rest.User
 import bird.translator.tennisonline.domain.di.modules.NetModule
 import bird.translator.tennisonline.domain.repositories.rest.service.IUserRestApiService
 import javax.inject.Inject
@@ -16,11 +16,21 @@ class UserRestApi : ABaseRestApi<IUserRestApiService> {
 
 
     fun registration(login: String, password: String)
-            = service.registration(User(login = login, password = password))
+            = service.registration(
+        User(
+            login = login,
+            password = password
+        )
+    )
 
 
     fun login(login: String, password: String)
-            = service.login(User(login = login, password = password))
+            = service.login(
+        User(
+            login = login,
+            password = password
+        )
+    )
 
 
     fun refreshToken(refreshToken: String)

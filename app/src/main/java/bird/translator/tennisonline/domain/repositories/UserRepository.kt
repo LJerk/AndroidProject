@@ -3,11 +3,10 @@ package bird.translator.tennisonline.domain.repositories
 import android.os.SystemClock
 import bird.translator.tennisonline.base.SubRX
 import bird.translator.tennisonline.base.standardSubscribeIO
-import bird.translator.tennisonline.domain.di.models.Token
-import bird.translator.tennisonline.domain.di.models.User
+import bird.translator.tennisonline.domain.repositories.models.rest.Token
+import bird.translator.tennisonline.domain.repositories.models.rest.User
 import bird.translator.tennisonline.domain.repositories.local.UserStorage
 import bird.translator.tennisonline.domain.repositories.rest.api.UserRestApi
-import okhttp3.internal.http.HttpMethod
 import java.net.HttpURLConnection
 import javax.inject.Inject
 
@@ -36,7 +35,7 @@ class UserRepository {
             .standardSubscribeIO(observer)
     }
 
-    fun getUser() = storage.user
+    fun getUser() = storage.getUser()
 
     fun refreshToken(token: Token, onRetry: (Int) -> Boolean = { it == HttpURLConnection.HTTP_UNAUTHORIZED }): Token? {
 

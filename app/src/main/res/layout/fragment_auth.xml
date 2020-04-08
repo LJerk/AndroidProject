@@ -62,7 +62,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/enRegistration"
+        android:id="@+id/btnRegistration"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="120dp"
         android:layout_height="50dp"
